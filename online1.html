@@ -22,13 +22,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Work+Sans:wght@600&display=swap"
         rel="stylesheet">
+    <script src="jquery-3.6.0.js"></script>
+
     <style>
         body {
-background-color: whitesmoke;
+            background-color: whitesmoke;
         }
 
 
-        
+
         #logo {
             border-radius: 500px;
             width: 3em;
@@ -48,7 +50,7 @@ background-color: whitesmoke;
 
         .weight {
             font-weight: bold;
-            font-size: .9em;
+            /* font-size: 1em; */
         }
 
         .text {
@@ -60,22 +62,12 @@ background-color: whitesmoke;
         .head {
             font-size: 1.6em;
             font-family: 'Oleo Script', cursive;
-            text-shadow: 2px 2px 3px grey ;
+            text-shadow: 2px 2px 3px grey;
         }
 
         .navig {
-            background-color:ghostwhite;
-        box-shadow: 1px 0px 5px 1px grey;}
-
-
-        .hed {
-            font-size: 1.5em;
-            /* font-weight: bold; */
-            font-family: 'Carter One', cursive;
-        }
-
-        .h2 {
-            font-weight: bold;
+            background-color: ghostwhite;
+            box-shadow: 1px 0px 5px 1px grey;
         }
 
         .uli {
@@ -112,7 +104,7 @@ background-color: whitesmoke;
 
         .line {
             margin-top: 20px;
-            background-image:url(line.png);
+            background-image: url(line.png);
             display: flex;
             color: white;
             padding-top: 15px;
@@ -149,15 +141,80 @@ background-color: whitesmoke;
             width: 320px;
             margin: 10px;
         }
+
+        .hd {
+            margin-left: 50px;
+            font-family: 'Oleo Script', cursive;
+            text-shadow: 2px 2px 3px grey;
+        }
+
+        .hed {
+            font-weight: bold;
+            font-family: 'Oleo Script', cursive;
+        }
+
+        .modl {
+            position: relative;
+            left: -35px;
+            font-family: 'Work Sans', sans-serif;
+
+        }
+
+        .page {
+            font-weight: bold;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .cros {
+            position: relative;
+            bottom: 25px;
+            left: 9px;
+            background-color: orange;
+            font-size: 12px;
+        }
     </style>
+
+<script>
+        $(document).ready(function () {
+            $("#myModal").modal('show');
+        });
+    </script>
+
 </head>
 
 <body>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title hd" id="exampleModalLabel">"Welcome to Prasoon" </h1>
+                    <button type="button" class="btn-close cros" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <img src="modal.png" class="w-50 rounded-circle shadow" alt="">
+                </div>
+                <div class="modal-footer border-0 d-flex flex-column">
+                    <h4 class="mx-auto hed">Achievements of past few years......</h4>
+                    <ul class="modl">
+                        <li>Malnutrition cases - 1650</li>
+                        <li>Kitchen Garden - 2459</li>
+                        <li>635 TB patient connected to DOT.</li>
+                        <li>Silicosis identified - 96</li>
+                    </ul>
+                    <div>
+                        <button type="button" class="btn btn-primary page" data-bs-dismiss="modal">Continue to
+                            Page...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-expand-sm  navbar-light navig rounded-2 sticky-sm-top">
         <div class="container-fluid">
-            <img src="./IMAGES/LOGO/logo.png" alt="" width=" 80px" id="logo" /><a class="navbar-brand head" id="logo_head"
-                href="#">PRASOON</a>
+            <img src="./IMAGES/LOGO/logo.png" alt="" width=" 80px" id="logo" /><a class="navbar-brand head"
+                id="logo_head" href="#">PRASOON</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -253,7 +310,7 @@ background-color: whitesmoke;
         </div>
         <div class="lst">
             <h2 class="h2 ln">Linkages and Partnerships</h2>
-            <h4>Organaizations :-</h4>
+            <h4>Organaisations :-</h4>
             <ul class="myul1">
                 <li>Cry</li>
                 <li>CASA</li>
