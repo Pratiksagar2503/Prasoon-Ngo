@@ -24,9 +24,7 @@
         rel="stylesheet">
     <style>
         body {
-            background-image: url("https://wallpaperaccess.com/full/58357.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
+background-color: whitesmoke;
         }
 
 
@@ -62,11 +60,12 @@
         .head {
             font-size: 1.6em;
             font-family: 'Oleo Script', cursive;
+            text-shadow: 2px 2px 3px grey ;
         }
 
         .navig {
-            background-color: #cbe8f3;
-        }
+            background-color:ghostwhite;
+        box-shadow: 1px 0px 5px 1px grey;}
 
 
         .hed {
@@ -113,10 +112,10 @@
 
         .line {
             margin-top: 20px;
-            background-image: url("https://cdn.wallpapersafari.com/67/76/qtpSIw.jpg");
+            background-image:url(line.png);
             display: flex;
             color: white;
-            padding-top: 10px;
+            padding-top: 15px;
             font-weight: bold;
             align-items: center;
             width: 100vw;
@@ -155,7 +154,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm  navbar-light navig rounded-2">
+    <nav class="navbar navbar-expand-sm  navbar-light navig rounded-2 sticky-sm-top">
         <div class="container-fluid">
             <img src="./IMAGES/LOGO/logo.png" alt="" width=" 80px" id="logo" /><a class="navbar-brand head" id="logo_head"
                 href="#">PRASOON</a>
@@ -166,25 +165,25 @@
             </button>
             <div class="collapse navbar-collapse px-2" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-sm-0 text">
-                    <li class="nav-item mx-sm-1 weight">
+                    <li class="nav-item mx-sm-2 weight">
                         <a class="nav-link active" aria-current="page" href="Index.HTML">Home</a>
                     </li>
-                    <li class="nav-item mx-sm-1 weight">
+                    <li class="nav-item mx-sm-2 weight">
                         <a class="nav-link " aria-current="page" href="#">About us</a>
                     </li>
-                    <li class="nav-item mx-sm-1 weight">
+                    <li class="nav-item mx-sm-2 weight">
                         <a class="nav-link " aria-current="page" href="#">Vision/Mission</a>
                     </li>
                     </li>
-                    <li class="nav-item mx-sm-1 weight ">
+                    <li class="nav-item mx-sm-2 weight ">
                         <a class="nav-link " aria-current="page" href="#">News Blog</a>
                     </li>
                     </li>
-                    <li class="nav-item mx-sm-1 weight">
+                    <li class="nav-item mx-sm-2 weight">
                         <a class="nav-link " aria-current="page" href="#">Get Involve</a>
                     </li>
                     <!-- dropdown -->
-                    <li class="nav-item dropdown mx-sm-1 weight">
+                    <li class="nav-item dropdown mx-sm-2 weight">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Gallery
@@ -201,14 +200,17 @@
                         </ul>
                     </li>
                     <!-- dropdown ends -->
-                    <li class="nav-item mx-sm-1 weight">
+                    <li class="nav-item mx-sm-2 weight">
+                        <a class="nav-link " aria-current="page" href="#">Registration</a>
+                    </li>
+                    <li class="nav-item mx-sm-2 weight">
                         <a class="nav-link " aria-current="page" href="#">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2 border-primary" type="search" placeholder="Search"
+                    <input class="form-control me-2 border-secondary" type="search" placeholder="Search"
                         aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -217,7 +219,7 @@
     </div>
     <div id="vid">
         <video src="./IMAGES/LOGO/Prasoon LOGO.mp4" id="lg" loop autoplay></video>
-        <video src="./CLIPS/intro2.mp4" id="int" autoplay loop controls></video>
+        <video src="./CLIPS/intro2.mp4" id="int" controls autoplay loop></video>
     </div>
 
     <div class="line">
@@ -233,7 +235,7 @@
 
     <div class="container-lg d-flex p-2 justify-content-between flex-wrap">
         <div class="hm">
-            <h2 class="h2" align="center">"Welcome to Prasoon "</h2><br>
+            <h2 class="h2 head display-4" align="center">"Welcome to Prasoon "</h2><br>
             <p class="para" align="justify">
                 ‘PRASOON’ is a voluntary agency working in the areas of rural and urban development, Child education and
                 women
