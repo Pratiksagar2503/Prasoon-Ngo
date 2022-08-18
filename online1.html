@@ -91,16 +91,6 @@
             justify-content: space-evenly;
         }
 
-        #lg {
-            margin-top: 20px;
-            width: 45%;
-
-        }
-
-        #int {
-            margin-top: 20px;
-            width: 45%;
-        }
 
         .line {
             margin-top: 20px;
@@ -173,12 +163,40 @@
             background-color: orange;
             font-size: 12px;
         }
-        .or{
-font-size: 19px;
+
+        .or {
+            font-size: 19px;
+        }
+
+        .vid {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .vide {
+            width: 80%;
+        }
+
+        .vides {margin-top: 10px;
+            /* border: 1px solid red; */
+            width: 40em;
+            display: flex;justify-content: center;
+        }
+
+        .int {
+            width: 80%;
+        }
+
+        .ints {margin-top: 10px;
+            width: 40em;
+            /* border: 1px solid blue; */
+            display: flex;justify-content: center;
         }
     </style>
 
-<script>
+    <script>
         $(document).ready(function () {
             $("#myModal").modal('show');
         });
@@ -187,9 +205,9 @@ font-size: 19px;
 </head>
 
 <body>
-    <div id="myModal" class="modal fade">
+    <div id="myModal" class="modal fade ">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content my-lg-5">
                 <div class="modal-header border-0">
                     <h1 class="modal-title hd" id="exampleModalLabel">"Welcome to Prasoon" </h1>
                     <button type="button" class="btn-close cros" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -229,7 +247,9 @@ font-size: 19px;
                         <a class="nav-link active" aria-current="page" href="Index.HTML">Home</a>
                     </li>
                     <li class="nav-item mx-sm-2 weight">
-                        <a class="nav-link " aria-current="page" href="#">About us</a>
+                        <a class="nav-link " aria-current="page" href="#">About us
+
+                        </a>
                     </li>
                     <li class="nav-item mx-sm-2 weight">
                         <a class="nav-link " aria-current="page" href="#">Vision/Mission</a>
@@ -278,8 +298,12 @@ font-size: 19px;
 
     </div>
     <div id="vid">
-        <video src="./IMAGES/LOGO/Prasoon LOGO.mp4" id="lg" loop autoplay></video>
-        <video src="./CLIPS/intro2.mp4" id="int" controls autoplay loop></video>
+        <div class="vides">
+            <video class="vide" src="./IMAGES/LOGO/Prasoon LOGO.mp4" id="lg" loop autoplay></video>
+        </div>
+        <div class="ints">
+            <video src="./CLIPS/intro2.mp4" id="int" class="int" controls autoplay loop></video>
+        </div>
     </div>
 
     <div class="line">
